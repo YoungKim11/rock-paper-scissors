@@ -2,7 +2,7 @@ body {
     height: 100vh;
     display: flex;
     align-items: center;
-    background: linear-gradient(to top left, #000000, #00A3E0, #EF3340);
+    background: linear-gradient(to top right, #008E97, #FC4C02, #005778);
 }
 
 h1 {
