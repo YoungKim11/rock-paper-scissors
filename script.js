@@ -21,13 +21,19 @@ function getComputerChoice() {
 
 function playRound(computerSelection) {
     const playerSelectionNormal = prompt("So what will it be?? Rock, Paper, or Scissors")
-    const playerSelection = playerSelectionNormal.charAt(0).toUpperCase() + playerSelectionNormal.slice(1).toLowerCase();
+    const playerSelection =
+        playerSelectionNormal.charAt(0).toUpperCase() +
+        playerSelectionNormal.slice(1).toLowerCase();
 
-    if (playerSelection == "Rock" && computerSelection == "Scissors" || playerSelection == "Paper" && computerSelection == "Rock" || playerSelection == "Scissors" && computerSelection == "Paper") {
+    if (playerSelection == "Rock" && computerSelection == "Scissors" ||
+        playerSelection == "Paper" && computerSelection == "Rock" ||
+        playerSelection == "Scissors" && computerSelection == "Paper") {
         return alert(`The Player Won ${playerSelection} beats ${computerSelection}
         The Player chose: ${playerSelection} 
         The Computer chose: ${computerSelection}`, playerScore++);
-    } else if (computerSelection == "Rock" && playerSelection == "Scissors" || computerSelection == "Paper" && playerSelection == "Rock" || computerSelection == "Scissors" && playerSelection == "Paper") {
+    } else if (computerSelection == "Rock" && playerSelection == "Scissors" ||
+        computerSelection == "Paper" && playerSelection == "Rock" ||
+        computerSelection == "Scissors" && playerSelection == "Paper") {
         return alert(`The Computer won ${computerSelection} beats ${playerSelection}
         The Computer chose: ${computerSelection} 
         The Player chose: ${playerSelection}`), computerScore++;
@@ -62,4 +68,3 @@ function playGame() {
 
 console.log(computerSelection);
 playGame();
-
